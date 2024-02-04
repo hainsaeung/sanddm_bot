@@ -3,7 +3,7 @@ from discord.ext import commands
 from discord import Game
 from discord import Status
 from discord import Object
-import code
+import os
 
 
 class MyBot(commands.Bot):
@@ -37,5 +37,5 @@ class MyBot(commands.Bot):
 
 bot = MyBot()
 
-true_Token = code.environ["BOT_TOKEN"]
+true_Token = os.environ["Token"]
 bot.run(true_Token)
