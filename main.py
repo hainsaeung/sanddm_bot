@@ -3,6 +3,7 @@ from discord.ext import commands
 from discord import Game
 from discord import Status
 from discord import Object
+import code
 
 
 class MyBot(commands.Bot):
@@ -35,4 +36,6 @@ class MyBot(commands.Bot):
 
 
 bot = MyBot()
-bot.run('MTEzMzk3MTgwMzk4ODA1NDEyNw.GQd-PM.cbmzl0-1gF5wOO5QlTH-F-el3YRFsPso1kZ9Is')
+
+true_Token = code.environ["BOT_TOKEN"]
+bot.run(true_Token)
